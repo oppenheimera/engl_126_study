@@ -47,7 +47,10 @@ while True:
     print("In which of the following novels does the passage appear?")
     print("0) The Lifted Veil\n1) Sign of the Four \n2) Lord Jim \
          \n3) Howard's End\n4) The Good Soldier\n5) Ulysses \n6) The Waves \n7) Watt")
-    answer = int(input(">>> "))
+    answer = input(">>> ")
+    if answer == 'q':
+        exit()
+    answer = int(answer)
     if variables[answer] == novel[-1]:
         print("Correct!\n")
     else:
